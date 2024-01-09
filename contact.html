@@ -27,7 +27,7 @@
             </div>
         </div>
     </header>
-    <form class="contact-form" ref="{form}"> 
+    <form class="contact-form" method="post"> 
         <!--Setup EmailJS to configure emailing  --->
     <!--Utility class to add margin to both sides --->
     <div class="mb-3 mx-4">
@@ -39,7 +39,7 @@
         <textarea class="form-control message" id="exampleFormControlTextarea1" rows="10" placeholder="Hello John&#10&#10;I hope all is well,&#10&#10;I would love to setup an interview&#10&#10;Thanks&#10Redfield"></textarea>
     </div>
     <div class="text-center">
-    <button type="submit" class="btn btn-dark translate-middle">Send</button>
+    <button type="submit" class="btn btn-dark translate-middle" onclick="sendMSG()">Send</button>
     </div>
     </form> 
     <footer>
