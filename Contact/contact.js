@@ -9,7 +9,7 @@ function sendMSG(e) {
     
     e.preventDefault()
     Email.send({
-        SecureToken : "2c3720b6-be58-45da-bc73-6375efa3c1e9",
+        SecureToken : "658c7ef7-c558-42b3-8808-8a76e5109423",
         To : 'kohlwebdev@gmail.com',
         From : email.value,
         Subject : "Contact Form",
