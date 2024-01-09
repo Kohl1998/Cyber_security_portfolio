@@ -1,7 +1,4 @@
 body {
-    /* Sticks footer to bottom of the page */
-    margin: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -44,16 +41,55 @@ a:hover {
     color: red;
 }
 
+#Projects {
+    margin-top: 24px;
+}
+
+.container {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Styles to stick footer to the bottom of page */
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #d3d3d3;
     height: 50px;
-    margin-top: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 svg {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.card {
+    margin-right: 8px;
+}
+
+/* In media queries use position reletive for mobile/tablets to stick footer to bottom of page */
+
+@media only screen and (max-width: 1000px) {
+#Projects {
+    margin-bottom: 40px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+    height: 50px;
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto 0;
+}
 }
