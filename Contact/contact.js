@@ -1,9 +1,8 @@
 
 const form = document.querySelector('.contact-form')
 
-
 function sendMSG(e) {
-    e.preventDefault()
+    e.preventDefault();
     email = document.querySelector('.email')
     message = document.querySelector('.message')
 
@@ -18,4 +17,3 @@ function sendMSG(e) {
     );
 }
 
-form.addEventListener('submit', sendMSG)
